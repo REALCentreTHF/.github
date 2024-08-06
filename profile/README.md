@@ -11,20 +11,21 @@ Creates long-term NHS/DHSC TDEL growth scenarios, splitting funding growth by PO
 
 | Repository              | Status        |
 | -------------           |:-------------:| 
-| [funding_projections](https://github.com/REALCentreTHF/funding_projections)     | `Pre-release` | 
+| [budget_scenarios](https://github.com/zeyadissa/budget_scenarios)     | `Pre-release` | 
+| [funding_inputs](https://github.com/REALCentreTHF/funding_projections)     | `Pre-release` | 
 | [waitlist_model](https://github.com/zeyadissa/waitlist_model)          | `Pre-release` |  
-| demographic_projections | `Unreleased`  | 
+| demand_projections | `Unreleased`  | 
 | [ImpactNCD](https://github.com/ChristK/IMPACTncd_Liverpool)             | `Release`     | 
 | [Rpublic](https://github.com/zeyadissa/Rpublic)                 | `Pre-release` |
 
+```mermaid
 
-<!--
+flowchart LR
 
-**Here are some ideas to get you started:**
+waitlist_model --> budget_scenarios
+funding_inputs --> budget_scenarios
+demographic_projections --> budget_scenarios
+ImpactNCD --> demographic_projections
+Rpublic --> funding_inputs
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+```
