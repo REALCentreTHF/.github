@@ -23,6 +23,7 @@ Creates long-term NHS/DHSC TDEL growth scenarios, splitting funding growth by PO
 flowchart LR
 
 waitlist_model --> budget_scenarios
+Rpublic --> waitlist_model
 funding_inputs --> budget_scenarios
 demographic_projections --> budget_scenarios
 ImpactNCD --> demographic_projections
